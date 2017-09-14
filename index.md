@@ -4,9 +4,6 @@ layout: default
 
 # Overview
 
-![Contracts]({{ site.url }}/images/Intro-Contracts.png "System Illustration") 
-{: .pull-right}
-
 we propose *PADS*, a strategy-proof differentially private auction mechanism that allows cloud providers to privately trade resources with cloud consumers in such a way that individual bidding information of the cloud consumers is not exposed by the auction mechanism. 
 We demonstrate that *PADS* achieves differential privacy and approximate truthfulness guarantees while maintaining good performance in terms of revenue gains and allocation efficiency.
 We evaluate *PADS* through extensive simulation experiments that demonstrate that in comparison to traditional auction mechanisms, *PADS* achieves relatively high revenues for cloud providers while guaranteeing the privacy of the participating consumers.
