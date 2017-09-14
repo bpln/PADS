@@ -3,6 +3,6 @@
 
 **Publications**
 
- + Jinlai Xu, Balaji Palanisamy (2017). [Cost-aware Resource Management for Federated Clouds Using Resource Sharing Contracts](https://www.researchgate.net/publication/317097662_Cost-Aware_Resource_Management_for_Federated_Clouds_Using_Resource_Sharing_Contracts), IEEE Cloud 2017.
+ + Jinlai Xu, Balaji Palanisamy, Yuzhe Tang, S.D. Madhu Kumar (2017). [PADS: Privacy-preserving Auction Design for Allocating Dynamically Priced Cloud Resources](https://www.researchgate.net/profile/Jinlai_Xu), IEEE CIC 2017.
  
 
