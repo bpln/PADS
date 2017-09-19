@@ -26,15 +26,15 @@ We evaluate *PADS* through extensive simulation experiments that demonstrate tha
    + Approximate Differential Privacy: *PADS-ADP* can provide $(\epsilon,\delta)$-differential privacy. 
    + Truthfulness: *PADS-ADP* is truthfullness no matter what strategies are used by the bidders.
  + PADS-DP:
-   + Grouping Exponential Mechanism: the bids are grouped by the possible prices. For each group, we calculate the score function: \\
+   + Grouping Exponential Mechanism: the bids are grouped by the possible price outcomes. For each group, we calculate the score function: \\
    $$
    F(S_i, \rho_i) = \rho_i |S_i|
    $$\\
-     Based on the utility (the result of the score function) we calculate the probabiltiy of each group:\\
+     Based on the utility (the result of the score function), we calculate the probabiltiy of each group:\\
    $$
    Pr_i = \frac{\exp(\frac{\epsilon}{2\Delta} \rho_i |S_i|)}{\sum_{\rho_j\in P} \exp(\frac{\epsilon}{2\Delta} \rho_j |S_i|)} 
    $$\\
-     Based on the probabiltiy, we randomly choose the winner group. 
+     Based on the probabiltiies, we randomly choose the winner group. 
    + Differential Privacy: *PADS-DP* can provide $\epsilon$-differential privacy. 
    + Approximate Truthfulness: *PADS-DP* is $\epsilon\Delta$-truthfullness no matter what strategies are used by the bidders.
 
