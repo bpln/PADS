@@ -18,25 +18,25 @@ We evaluate *PADS* through extensive simulation experiments that demonstrate tha
 ## How the System Works?
  + PADS-ADP:
    + Iterative Exponential Mechanism: in every iteration, the mechanism chooses one winner from the bidders with Exponential Mechanism proportional to 
-   \$$
+   $$
    \begin{equation} Pr[ W \gets W \cup \{i\} ]_i = \frac{\exp(\epsilon^\prime b_i)}{\sum_{i\in R} \exp(\epsilon^\prime b_i)} \end{equation}
    $$
-     Where $$\begin{equation} \epsilon^\prime=\frac{\epsilon}{(e-1)\Delta \ln(e/\delta)} \end{equation}$$ is the intermediate differential private parameter in one iteration. 
+     Where $\begin{equation} \epsilon^\prime=\frac{\epsilon}{(e-1)\Delta \ln(e/\delta)} \end{equation}$ is the intermediate differential private parameter in one iteration. 
      We choose one winner for each iteration until all the bids are selected or the VMs are all allocated. 
-   + Approximate Differential Privacy: *PADS-ADP* can provide $$(\epsilon,\delta)$$-differential privacy. 
+   + Approximate Differential Privacy: *PADS-ADP* can provide $(\epsilon,\delta)$-differential privacy. 
    + Truthfulness: *PADS-ADP* is truthfullness no matter what strategies are used by the bidders.
  + PADS-DP:
    + Grouping Exponential Mechanism: the bids are grouped by the possible prices. For each group, we calculate the score function: 
-   \$$
+   $$
    F(S_i, \rho_i) = \rho_i |S_i|
    $$
      Based on the utility (the result of the score function) we calculate the probabiltiy of each group:
-   \$$
+   $$
    Pr_i = \frac{\exp(\frac{\epsilon}{2\Delta} \rho_i |S_i|)}{\sum_{\rho_j\in P} \exp(\frac{\epsilon}{2\Delta} \rho_j |S_i|)} 
    $$
      Based on the probabiltiy, we randomly choose the winner group. 
-   + Differential Privacy: *PADS-DP* can provide $$\epsilon$$-differential privacy. 
-   + Approximate Truthfulness: *PADS-DP* is $$\epsilon\Delta$$-truthfullness no matter what strategies are used by the bidders.
+   + Differential Privacy: *PADS-DP* can provide $\epsilon$-differential privacy. 
+   + Approximate Truthfulness: *PADS-DP* is $\epsilon\Delta$-truthfullness no matter what strategies are used by the bidders.
 
 **Publications**
 
