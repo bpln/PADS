@@ -18,8 +18,8 @@ We evaluate *PADS* through extensive simulation experiments that demonstrate tha
 ## How the System Works?
  + PADS-ADP:
    + Iterative Exponential Mechanism: in every iteration, the mechanism chooses one winner from the bidders with Exponential Mechanism proportional to 
-   $$Pr[ W \gets W \cup \{i\} ]_i = \frac{\exp(\epsilon^\prime b_i)}{\sum_{i\in R} \exp(\epsilon^\prime b_i)}$$
-     Where \$$ \epsilon^\prime=\frac{\epsilon}{(e-1)\Delta \ln(e/\delta)}$$ is the intermediate differential private parameter in one iteration. 
+   $$\begin{equation} Pr[ W \gets W \cup \{i\} ]_i = \frac{\exp(\epsilon^\prime b_i)}{\sum_{i\in R} \exp(\epsilon^\prime b_i)} \end{equation}$$
+     Where \$$\begin{equation} \epsilon^\prime=\frac{\epsilon}{(e-1)\Delta \ln(e/\delta)} \end{equation}$$ is the intermediate differential private parameter in one iteration. 
      We choose one winner for each iteration until all the bids are selected or the VMs are all allocated. 
    + Approximate Differential Privacy: *PADS-ADP* can provide $(\epsilon,\delta)$-differential privacy. 
    + Truthfulness: *PADS-ADP* is truthfullness no matter what strategies are used by the bidders.
